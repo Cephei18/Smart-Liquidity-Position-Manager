@@ -1,0 +1,45 @@
+{
+  "name": "smart-liquidity-position-manager",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "pool:state": "tsx scripts/fetchPoolState.ts",
+    "milestone": "tsx scripts/milestone.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.99.2",
+    "@uniswap/sdk-core": "^7.13.0",
+    "@uniswap/v3-sdk": "^3.30.0",
+    "bn.js": "^5.2.3",
+    "dotenv": "^17.4.2",
+    "ethers": "^6.16.0",
+    "jsbi": "^4.3.2",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "wagmi": "^3.6.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^24.12.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.58.2",
+    "vite": "^5.4.19",
+    "vitest": "^2.1.9",
+    "tsx": "^4.20.6"
+  }
+}
